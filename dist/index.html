@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Робот-мойщик окон в Ростове-на-Дону</title>
+</head>
+
+<body>
+
+    <div class="overlay" id="overlayForDrawer">
+        <div class="drawer">
+            <div class="drawer__cross"></div>
+            <div class="drawer__wrap">
+                <img class="drawer__logo" src="./img/logo.svg" alt="logo">
+                <ul class="drawer__ul">
+                    <li><a href="#orobote">О роботе</a></li>
+                    <li><a href="#price">Цены</a></li>
+                    <li><a href="#kakzakazat">Как заказать</a></li>
+                </ul>
+
+                <div class="drawer__phone">
+                    <a href="tel:+79515372123">+7 951 537-21-23</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlayForModal">
+
+        <div class="modal">
+            <div class="modal__cross"></div>
+            <div class="modal__text-title">
+                Заполните форму
+                и мы Вам перезвоним
+            </div>
+            <div class="callback-form">
+                <form action="#" class="callback-form">
+                    <input type="text" required name="name" placeholder="Ваше имя" id="name_form">
+                    <input type="text" required name="phone" class="tel" placeholder="+7" id="phone_form">
+                    <button id="btn_form" type="submit">Хочу робота!</button>
+                    <div class="soglasie">Нажимая кнопку “Хочу робота!” Вы соглашаетесь с <a href="#">правилами
+                            обработки данных</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header__logo"><img src="./img/logo.svg" alt="logo"></div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#orobote">О роботе</a></li>
+                    <li><a href="#price">Цены</a></li>
+                    <li><a href="#kakzakazat">Как заказать</a></li>
+                </ul>
+            </nav>
+            <div class="header__button">
+                <button class="open-modal">Взять в аренду</button>
+            </div>
+            <div class="header__burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="offer">
+            <img class="offer__bg-img" src="./img/offer_image.png" alt="">
+            <div class="offer__text-wrap">
+                <div class="offer__sub-title">
+                    Хочешь качественно и безопасно помыть окна?
+                </div>
+                <div class="offer__title">
+                    Возьми в аренду робота-мойщика!
+                </div>
+                <button class="offer__btn open-modal">Забронировать</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="orobote">
+        <div class="first-block">
+            <div class="first-block__text-wrap">
+                <div class="first-block__title">
+                    Это безопасно!
+                </div>
+                <div class="first-block__text">
+                    <p>Вспомните ситуацию, когда стоя на подоконнике пытаетесь дотянуться до крайнего угла окна.
+                        Вероятно, вы высовываетесь из окна и тем самым создаете большие риски для собсвенной жизни и
+                        здоровья. </p>
+                    <p>Но c <b>роботом-мойщиком</b> таких проблем просто не может быть.</p>
+                </div>
+            </div>
+            <div class="first-block__img">
+                <img src="./img/safety.png" alt="safety">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="delivery">
+            <div class="star star_1"></div>
+            <div class="star star_2"></div>
+            <div class="star star_3"></div>
+            Бесплатная доставка по Ростову-на-Дону 📦
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="first-block second">
+            <div class="first-block__text-wrap">
+                <div class="first-block__title">
+                    Качественная уборка
+                </div>
+                <div class="first-block__text">
+                    <p>Наши роботы отлично справляются со своими задачами! Они крепко держатся на окне, не оставляют
+                        следов и разводов. После первой мойки вы удивитесь, каким чистым может быть ваше окно.</p>
+                </div>
+            </div>
+            <div class="first-block__img">
+                <img src="./img/robot.png" alt="safety">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="price">
+        <div class="price">
+            <img src="./img/stars.png" alt="price" class="price__stars">
+            <div class="price__content-wrap">
+                <div class="price__content-left">
+                    <div class="title">И сколько же это стоит?</div>
+                    <div class="sub-title">– Точно дешевле вашего времени!</div>
+                    <div class="pink-block">
+                        <div class="fst-row">Мы посчитали, что робот-мойщик экономит минимум</div>
+                        <div class="snd-row">
+                            <div class="percent">50%</div>
+                            <div class="text">вашего драгоценного времени</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__content-right">
+                    <div class="title">У нас один тариф</div>
+                    <div class="sub-title">всегда и для всех!</div>
+                    <div class="list">
+                        <ul>
+                            <li>Аренда робота на 24 часа</li>
+                            <li>Бесплатная доставка</li>
+                            <li>Обучение и инструктаж</li>
+                            <li>Дополнительный набор салфеток</li>
+                            <li>Участие в бонусной программе</li>
+                        </ul>
+                    </div>
+                    <div class="price-block">
+                        990₽ <span>/ сутки</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="kakzakazat">
+        <div class="order">
+            <div class="order__title">
+                И как же заказать такое чудо?
+            </div>
+            <div class="order__wrap">
+                <div class="order__right">
+                    <p>
+                        Вы можете оставить свои контакты в фому и наш менеджер сразу же вам перезвонит. С ним вы можете
+                        договориться о времени и месте доставки.
+                    </p>
+                    <p>
+                        Или написать в наш <a href="tg://resolve?domain=robotrostov" class="telegram">телеграм <img
+                                src="./img/telegram-icon.svg" alt=""></a>
+                    </p>
+                    <p>А также можете позвонить нам самостоятельно по номеру <a class="phone" href="tel:+79515372123">+7
+                            951 537-21-23</a></p>
+                </div>
+                <div class="order__left">
+                    <div class="order__form">
+                        <div class="star star_1"></div>
+                        <div class="star star_2"></div>
+                        <div class="star star_3"></div>
+                        <div class="title">
+                            Чтобы заказать заполните эту форму
+                        </div>
+                        <form action="#" class="callback-form">
+                            <input type="text" required name="name" placeholder="Ваше имя">
+                            <input type="text" class="tel" required name="phone" placeholder="+7">
+                            <button type="submit">Хочу робота!</button>
+                            <div class="soglasie">Нажимая кнопку “Хочу робота!” Вы соглашаетесь с <a href="#">правилами
+                                    обработки данных</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="./img/logo_light.svg" alt="logo_light">
+            </div>
+            <div class="footer__telegram">
+                <a href="tg://resolve?domain=robotrostov">
+                    <img src="./img/telegram-icon.svg" alt="telegram">
+                </a>
+            </div>
+            <div class="footer__phone">
+                <a href="tel:+79515372123">+7 951 537-21-23</a>
+            </div>
+            <div class="footer__soglasie"><a href="#">Правила обработки персональных данных</a></div>
+        </div>
+        <div class="author">Дизайн и разработка <a href="https://t.me/todaystudio_web/"> TodayStudio</a></div>
+    </footer>
+
+    <script src="./js/main.min.js"></script>
+
+</body>
+
+</html>
